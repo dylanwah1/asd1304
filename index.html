@@ -1,0 +1,304 @@
+<!doctype html>
+//Dylan Romeo Wahlstrom
+//1302
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	
+	<title>iTour</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body>
+    <div data-role="page" id="itourstart">
+    <div data-role="header" data-position="fixed" data-theme="a">
+            
+    </div>
+    
+	    <div data-theme="a">
+		
+                
+                <div data-role="content">
+                <a href="#homeitour">
+                    <div style=" text-align:center">
+                        <img style="width: 288px; height: 300px" src="http://i45.tinypic.com/2zo8xnl.jpg" />
+                    </div>
+                </a>
+	    
+	    
+	
+	
+	</div>
+	</div>
+	
+    </div>
+    <div data-role="page" id="homeitour" data-add-back-btn="true"> 
+        
+        <div data-role="header" data-position="fixed" data-theme="a">
+            <h1>iTour</h1>
+	    <div data-role="footer" data-position="fixed" data-theme="c">
+	    
+		<div data-role="navbar">
+                <ul>
+                    <li><a href="#homeitour" data-icon="home" data-theme="a" class="ui-btn-active ui-state-persist">Home</a></li>
+                    <li><a href="#addtour" data-transition="flip" data-icon="plus" data-theme="a">Tour</a></li>
+                    
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+        
+        
+        <div data-role="content">
+            
+            <div data-theme="a">
+                
+                <ul data-role="listview">
+                <li>
+                    <a href="#date">
+                        Venue Contacts
+                    </a>
+                </li>
+                <li>
+                    <a href="#error">
+                        Band Contacts
+                    </a>
+                </li>
+                <li>
+                    <a href="#error">
+                        Merchandise Contacts
+                    </a>
+                </li>
+                <li>
+                    <a href="#error">
+                        Previous Tours
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+            </div>
+            
+        </div>
+        
+    </div>
+    <div data-role="page" id="addtour" data-add-back-btn="true" >
+        
+        <div data-role="header" data-position="fixed" data-theme="a">
+            <h1>iTour</h1>
+	    <div data-role="footer" data-position="fixed" data-theme="c">
+            <div data-role="navbar" data-position="fixed">
+                <ul>
+                    <li><a href="#homegroom" data-transition="flip" data-icon="home" data-theme="a">Home</a></li>
+                    <li><a href="#add" data-icon="plus" data-theme="a" class="ui-btn-active ui-state-persist">Tour</a></li>
+                    
+                    
+                </ul>
+	    </div>
+	    </div>
+            
+        </div>
+	
+	 <div data-role="content">
+            <form action="" method="post" id="addtour">
+		<div data-role="fieldcontain">
+		    <label for="fname">Tour Name:</label>
+		    <input type="text" name="fname" id="fname" class="required" />
+		</div>	
+		<div data-role="fieldcontain">    
+		    <label for="lname">Start Date:</label>
+		    <input type="text" name="lname" id="lname" class="required"/>
+		</div>
+		<div data-role="fieldcontain">    
+		    <label for="email">End Date:</label>
+		    <input type="text" name="email" id="email" class="required email" />
+		</div>
+		<div data-role="content">
+            
+            <div data-theme="a">
+		
+		<ul data-role="listview">
+                <li>
+                    <a href="#budget">
+                        Add Budget
+                    </a>
+                </li>
+                <li>
+                    <a href="#adddate">
+                        Add Dates
+                    </a>
+                </li>
+                <li>
+                    <a href="#addvenues">
+                        Add Venues
+                    </a>
+                </li>
+	    </div>
+		</div>
+		
+    
+		<div>
+		    <input type="reset" value="Reset" data-theme="a" />
+		    <input type="submit" value="Submit" data-theme="b" />
+		</div>
+		
+		
+		
+	    </form>
+	    
+	 </div>
+    </div>
+        
+    </div>
+    
+    <div data-role="page" id="budget" data-add-back-btn="true" >
+        
+        <div data-role="header" data-position="fixed" data-theme="a">
+            <h1>iTour</h1>
+	    <div data-role="footer" data-position="fixed" data-theme="c">
+            <div data-role="navbar" data-position="fixed">
+                <ul>
+                    <li><a href="#homegroom" data-transition="flip" data-icon="home" data-theme="a">Home</a></li>
+                    <li><a href="#add" data-icon="plus" data-theme="a" class="ui-btn-active ui-state-persist">Tour</a></li>
+                    
+                    
+                </ul>
+	    </div>
+	    </div>
+            
+        </div>
+	
+	 <div data-role="content">
+            <form action="" method="post" id="budget">
+		<div data-role="fieldcontain">
+		    <label for="fname">Gas Budget:</label>
+		    <input type="text" name="fname" id="fname" class="required" />
+		</div>	
+		<div data-role="fieldcontain">    
+		    <label for="lname">Hotel Budget:</label>
+		    <input type="text" name="lname" id="lname" class="required"/>
+		</div>
+		<div data-role="fieldcontain">    
+		    <label for="email">Daily Pre Diem Budget:</label>
+		    <input type="text" name="email" id="email" class="required" />
+		</div>
+		<div data-role="fieldcontain">    
+		    <label for="email">Petty Cash:</label>
+		    <input type="text" name="email" id="email" class="required" />
+		</div>
+		
+		
+    
+		<div>
+		    <input type="reset" value="Reset" data-theme="a" />
+		    <input type="submit" value="Submit" data-theme="b" />
+		</div>
+		
+		
+		
+	    </form>
+	    
+	 </div>
+    </div>
+        
+    </div>
+    <div data-role="page" id="adddate" data-add-back-btn="true" >
+        
+        <div data-role="header" data-position="fixed" data-theme="a">
+            <h1>iTour</h1>
+	    <div data-role="footer" data-position="fixed" data-theme="c">
+            <div data-role="navbar" data-position="fixed">
+                <ul>
+                    <li><a href="#homeitour" data-transition="flip" data-icon="home" data-theme="a">Home</a></li>
+                    <li><a href="#add" data-icon="plus" data-theme="a" class="ui-btn-active ui-state-persist">Tour</a></li>
+                    
+                    
+                </ul>
+	    </div>
+	    </div>
+            
+        </div>
+	
+	 <label for="date">Date:</label>
+<input type="date" name="date" id="date" value=""  />
+ <label for="date">Date:</label>
+<input type="date" name="date" id="date" value=""  />	
+     <label for="date">Date:</label>
+<input type="date" name="date" id="date" value=""  />	
+     <label for="date">Date:</label>
+<input type="date" name="date" id="date" value=""  />	
+     <label for="date">Date:</label>
+<input type="date" name="date" id="date" value=""  />	
+    
+    <div>
+		    <input type="reset" value="Reset" data-theme="a" />
+		    <input type="submit" value="Submit" data-theme="b" />
+		</div>
+    
+       <div data-role="page" id="addvenues" data-add-back-btn="true" >
+        
+        <div data-role="header" data-position="fixed" data-theme="a">
+            <h1>iTour</h1>
+	    <div data-role="footer" data-position="fixed" data-theme="c">
+            <div data-role="navbar" data-position="fixed">
+                <ul>
+                    <li><a href="#homeitour" data-transition="flip" data-icon="home" data-theme="a">Home</a></li>
+                    <li><a href="#add" data-icon="plus" data-theme="a" class="ui-btn-active ui-state-persist">Tour</a></li>
+                    
+                    
+                </ul>
+	    </div>
+	    </div>
+            
+        </div>
+	
+	 <label for="date">Date:</label>
+<input type="date" name="date" id="date" value=""  />
+ <label for="date">Date:</label>
+<input type="date" name="date" id="date" value=""  />	
+     <label for="date">Date:</label>
+<input type="date" name="date" id="date" value=""  />	
+     <label for="date">Date:</label>
+<input type="date" name="date" id="date" value=""  />	
+     <label for="date">Date:</label>
+<input type="date" name="date" id="date" value=""  />	
+    
+    <div>
+		    <input type="reset" value="Reset" data-theme="a" />
+		    <input type="submit" value="Submit" data-theme="b" />
+		</div>
+    
+    
+   
+    
+    
+     
+
+    
+
+	<!-- JavaScript under here -->
+        
+        <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
